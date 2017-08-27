@@ -1,12 +1,7 @@
 /**
- * Pirate Bay proxy.
- */
-exports.proxy = 'https://pirateproxy.cam'
-
-/**
  * WebTorrent config.
  */
-exports.wt = {
+exports.webtorrent = {
   client: {
     maxConns: 55,   // Max number of connections per torrent (default=55)
     tracker: true,  // Enable trackers (default=true), or options object for Tracker
@@ -14,6 +9,6 @@ exports.wt = {
     webSeeds: true  // Enable BEP19 web seeds (default=true)
   },
   torrent: {
-    maxWebConns: 4, // Max number of simultaneous connections per web seed [default=4]
+    maxWebConns: 4 // Max number of simultaneous connections per web seed [default=4]
   }
 }
