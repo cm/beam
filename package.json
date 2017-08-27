@@ -1,0 +1,24 @@
+{
+  "name": "stdlr",
+  "version": "0.0.1",
+  "description": "A simple cross platform media streamer.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisburland/stdlr.git"
+  },
+  "author": "Christian Burland Mankowski <christian@stdlr.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisburland/stdlr/issues"
+  },
+  "homepage": "https://github.com/chrisburland/stdlr#readme",
+  "dependencies": {
+    "electron": "^1.7.5",
+    "preact": "^8.2.4",
+    "webtorrent": "^0.98.19"
+  }
+}
