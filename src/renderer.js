@@ -49,22 +49,23 @@ class Screen extends Component {
     }
     this.server = null
     this.torrent = null
-    this.startStream()
   }
 
-  startStream() {
-    this.torrent = client.add(this.props.stream)
-    this.torrent.once('ready', () => {
-      this.server = torrent.createServer()
-      this.server.listen(0, () => {
-        const port = server.address().port
-        const url = `http://127.0.0.1:${port}/0`
-        this.setState({
-          ready: true,
-          url: url
+  startStream(stream) {
+    if (this.state.ready !== true) {
+      this.torrent = client.add(stream)
+      this.torrent.once('ready', () => {
+        this.server = this.torrent.createServer()
+        this.server.listen(0, () => {
+          let port = this.server.address().port
+          let url = `http://127.0.0.1:${port}/0`
+          this.setState({
+            ready: true,
+            url: url
+          })
         })
       })
-    })
+    }
   }
 
   destroyStream() {
@@ -73,6 +74,7 @@ class Screen extends Component {
   }
 
   render() {
+    this.startStream(this.props.stream)
     if (this.state.ready === false) {
       return h('p', null, 'Loading...')
     } else {
@@ -94,6 +96,7 @@ class App extends Component {
     }
 
     this.onSubmit = this.onSubmit.bind(this)
+    this.onBackButton = this.onBackButton.bind(this)
   }
 
   onSubmit(link) {
