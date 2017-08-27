@@ -1,5 +1,5 @@
 {
-  "name": "stdlr",
+  "name": "beam",
   "version": "0.0.1",
   "description": "A simple cross platform media streamer.",
   "main": "src/main.js",

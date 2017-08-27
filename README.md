@@ -1,6 +1,6 @@
-# Stdlr
+# Beam
 
-[![dependencies Status](https://david-dm.org/chrisburland/stdlr/status.svg)](https://david-dm.org/chrisburland/stdlr)
-[![Code Climate](https://codeclimate.com/github/chrisburland/stdlr/badges/gpa.svg)](https://codeclimate.com/github/chrisburland/stdlr)
+[![dependencies Status](https://david-dm.org/chrisburland/beam/status.svg)](https://david-dm.org/chrisburland/beam)
+[![Code Climate](https://codeclimate.com/github/chrisburland/beam/badges/gpa.svg)](https://codeclimate.com/github/chrisburland/beam)
 
 A simple cross platform media streamer.
