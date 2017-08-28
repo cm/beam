@@ -4,20 +4,21 @@
   "description": "A simple cross platform media streamer.",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron src/main.js"
+    "start": "electron src/main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisburland/stdlr.git"
+    "url": "git+https://github.com/chrisburland/beam.git"
   },
-  "author": "Christian Burland Mankowski <christian@stdlr.io>",
+  "author": "Christian Burland Mankowski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrisburland/stdlr/issues"
+    "url": "https://github.com/chrisburland/beam/issues"
   },
-  "homepage": "https://github.com/chrisburland/stdlr#readme",
+  "homepage": "https://github.com/chrisburland/beam#readme",
   "dependencies": {
     "electron": "^1.7.5",
+    "fluent-ffmpeg": "^2.1.2",
     "preact": "^8.2.4",
     "webtorrent": "^0.98.19"
   }
