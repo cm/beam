@@ -1,31 +1,39 @@
 /* BEGIN Regular */
 @font-face {
   font-family: 'Open Sans';
-  src: url("./OpenSans-Regular.woff2?v=1.1.0") format("woff2");
+  src: url("./OpenSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 /* END Regular */
 /* BEGIN Italic */
 @font-face {
   font-family: 'Open Sans';
-  src: url("./OpenSans-Italic.woff2?v=1.1.0") format("woff2");
+  src: url("./OpenSans-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic; }
 /* END Italic */
 /* BEGIN Bold */
 @font-face {
   font-family: 'Open Sans';
-  src: url("./OpenSans-Bold.woff2?v=1.1.0") format("woff2");
+  src: url("./OpenSans-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
 /* END Bold */
 /* BEGIN Bold Italic */
 @font-face {
   font-family: 'Open Sans';
-  src: url("./OpenSans-BoldItalic.woff2?v=1.1.0") format("woff2");
+  src: url("./OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic; }
 /* END Bold Italic */
+/* BEGIN Material Icons */
+@font-face {
+	font-family: 'Material Icons';
+	src: url('./MaterialIcons-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+/* END Material Icons */
 
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -57,6 +65,21 @@ button:focus {
   outline: none;
 }
 
+/* Material Icons specific styles */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+	direction: ltr;
+}
+
 /* Global styles */
 body {
 	color: #a0a0a0;
@@ -65,6 +88,7 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.2px;
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 	/* -webkit-app-region: drag; */
 }
 
